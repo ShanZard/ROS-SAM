@@ -26,8 +26,8 @@ With the L version, for example, you need to do the following.
 
 ### Training and inference
 
-```cd train ```
-``` accelerate launch train.py ```  
+```cd train ```   
+``` accelerate launch train.py ```    
 ``` CUDA_VISIBLE_DEVICES=0 accelerate launch inference.py ``` 
 
 Notably, inference process only work in single GPU.
