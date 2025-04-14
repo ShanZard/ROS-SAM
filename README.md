@@ -45,4 +45,4 @@ If you find ROS-SAM useful in your research or refer to the provided baseline re
 ```
 ### Acknowledgments
 
-- Thanks [SAM](https://github.com/facebookresearch/segment-anything), [HQ-SAM](https://github.com/SysCV/sam-hq) [SAM-LoRA](https://github.com/JamesQFreeman/Sam_LoRA/tree/main) and [SAT-MTB](http://www.csu.cas.cn/gb/kybm/sjlyzx/gcxx_sjj/sjj_wxxl/202211/t20221121_6551405.html) for their public code and released dataset and models.
+- Thanks [SAM](https://github.com/facebookresearch/segment-anything), [HQ-SAM](https://github.com/SysCV/sam-hq), [SAM-LoRA](https://github.com/JamesQFreeman/Sam_LoRA/tree/main) and [SAT-MTB](http://www.csu.cas.cn/gb/kybm/sjlyzx/gcxx_sjj/sjj_wxxl/202211/t20221121_6551405.html) for their public code and released dataset and models.
