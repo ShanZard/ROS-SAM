@@ -15,7 +15,7 @@ We propose ROS-SAM to extend SAM for high-quality remote moving object segmentat
 Preparing this dataset is a complex process.  
 >(1). Download the [SAT-MTB](https://ieeexplore.ieee.org/document/10130311) dataset at this [link](http://www.csu.cas.cn/gb/kybm/sjlyzx/gcxx_sjj/sjj_wxxl/202211/t20221121_6551405.html).  
 >(2). Prepare the dataset format according to the setting of ```ROSSAM_Dataset```. The most important thing is that you need to prepare a ```boxes.npy [N,4] [xmin,ymin,xmax,ymax]``` and ```onehotmask.npy [N,H,W]``` for each image.  
->(3). Follow the example of the ```data``` folder and put in the corresponding file.
+>(3). Follow the example of the ```data``` folder and put in the corresponding file. ```data\train``` have a example.
 
 ### Model checkpoints  
 
