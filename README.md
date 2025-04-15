@@ -6,12 +6,15 @@
 We propose ROS-SAM to extend SAM for high-quality remote moving object segmentation. Refer to our paper for more details.
 
 ### Quick start
+
 ```
 git clone https://github.com/ShanZard/ROS-SAM.git
 cd  ROS-SAM
 conda create -f environment.yml 
-``` 
+```
+
 ### Prepare your dataset 
+
 Preparing this dataset is a complex process.  
 >(1). Download the [SAT-MTB](https://ieeexplore.ieee.org/document/10130311) dataset at this [link](http://www.csu.cas.cn/gb/kybm/sjlyzx/gcxx_sjj/sjj_wxxl/202211/t20221121_6551405.html).  
 >(2). Prepare the dataset format according to the setting of ```ROSSAM_Dataset```. The most important thing is that you need to prepare a ```boxes.npy [N,4] [xmin,ymin,xmax,ymax]``` and ```onehotmask.npy [N,H,W]``` for each image.  
@@ -24,13 +27,20 @@ With the L version, for example, you need to do the following.
 ```mkdir pretrained_checkpoint```  
 ```download sam_vit_l_0b3195.pth\sam_vit_l_maskdecoder.pth\sam_hq_vit_l.pth```
 
+### Change some code
+
+```mmcv.impad``` does not support multi-channel padding, so some modifications need to be made to its source code to support padding for onohotmask. This is very simple, and of course we provide a referential impad in ```fixedimpad.py```
+
+
 ### Training and inference
 
-```cd train ```   
-``` accelerate launch train.py ```    
-``` CUDA_VISIBLE_DEVICES=0 accelerate launch inference.py ``` 
+```
+cd train    
+accelerate launch train.py  
+CUDA_VISIBLE_DEVICES=0 accelerate launch inference.py ``` 
+```
 
-Notably, inference process only work in single GPU.
+Notably, the inference process only works on a single GPU.
 
 ### Citation
 
