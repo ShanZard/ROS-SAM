@@ -7,9 +7,9 @@ We propose ROS-SAM to extend SAM for high-quality remote moving object segmentat
 
 ### Quick start
 
-```git clone https://github.com/ShanZard/ROS-SAM.git```  
-```cd  ROS-SAM```   
-```conda create -f environment.yml```
+```git clone https://github.com/ShanZard/ROS-SAM.git
+   cd  ROS-SAM
+   conda create -f environment.yml```
 
 ### Prepare your dataset 
 Preparing this dataset is a complex process.  
