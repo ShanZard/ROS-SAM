@@ -37,7 +37,7 @@ With the L version, for example, you need to do the following.
 ```
 cd train    
 accelerate launch train.py  
-CUDA_VISIBLE_DEVICES=0 accelerate launch inference.py ``` 
+CUDA_VISIBLE_DEVICES=0 accelerate launch inference.py 
 ```
 
 Notably, the inference process only works on a single GPU.
