@@ -29,7 +29,7 @@ With the L version, for example, you need to do the following.
 
 ### Change some code
 
-```mmcv.impad``` does not support multi-channel padding, so some modifications need to be made to its source code to support padding for onohotmask. This is very simple, and of course we provide a referential impad in ```fixedimpad.py```
+```mmcv.impad``` does not support multi-channel padding, so some modifications need to be made to its source code to support padding for onohotmask. This is very simple, and of course we provide a referential impad in ```modifiedimpad.py```
 
 
 ### Training and inference
